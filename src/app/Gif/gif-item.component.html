@@ -1,0 +1,8 @@
+<img
+  src="https://media3.giphy.com/media/xUOxfjsW9fWPqEWouI/giphy.gif?cid=3640f6095c2e30a771777a4c6334d78a"
+  class="overlay"
+  id="{{ gifId }}"
+  (click)="checkGifID()"
+  *ngIf="!showGif || correctAttempt"
+/>
+<img src="{{ gifUrl }}" class="gif-image" id="{{ gifId }}" (click)="checkGifID()" />

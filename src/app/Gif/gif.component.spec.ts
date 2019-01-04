@@ -1,19 +1,18 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { GifComponent } from './gif.component';
 
-import { AboutComponent } from './about.component';
-
-describe('AboutComponent', () => {
-  let component: AboutComponent;
-  let fixture: ComponentFixture<AboutComponent>;
+describe('GifComponent', () => {
+  let component: GifComponent;
+  let fixture: ComponentFixture<GifComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [AboutComponent]
+      declarations: [GifComponent]
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AboutComponent);
+    fixture = TestBed.createComponent(GifComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

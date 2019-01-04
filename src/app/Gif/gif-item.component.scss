@@ -1,0 +1,19 @@
+.gif-image {
+  position: relative;
+  width: 480px;
+  height: 360px;
+  margin-left: 10px;
+  z-index: 1;
+}
+
+.overlay {
+  width: 500px;
+  height: 360px;
+  position: absolute;
+  z-index: 2;
+}
+
+.gridContainer {
+  width: auto;
+  height: auto;
+}

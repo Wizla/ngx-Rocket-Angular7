@@ -1,0 +1,25 @@
+<div class="container-fluid">
+  <div class="jumbotron text-center">
+    <h1><span translate>APP_NAME</span></h1>
+    <p>
+      <i class="far fa-bookmark"></i> <span translate>Gif</span>
+      <!-- <button (click)="playAudio()" style="width: 50px; height: 50px;"></button> -->
+    </p>
+    <app-loader [isLoading]="isLoading"></app-loader>
+    <q [hidden]="isLoading">
+      <div class="gridContainer">
+        <div class="row" *ngFor="let grid of gameGrid">
+          <div class="column" *ngFor="let item of grid">
+            <app-gif-item
+              [gifUrl]="item.gifUrl"
+              [gifId]="item.gifId"
+              [correctAttempt]="selector"
+              (valueChange)="displayCounter($event)"
+              (gifItemId)="validateSelectedOption($event)"
+            ></app-gif-item>
+          </div>
+        </div>
+      </div>
+    </q>
+  </div>
+</div>
